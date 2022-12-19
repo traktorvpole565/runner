@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5e5c1ecc3e1becd43be76db6a55f61d7
+timeCreated: 1668438112
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Gogono Cocoa Mochi Cyrillic
+  fontNames:
+  - Gogono Cocoa Mochi Cyrillic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
