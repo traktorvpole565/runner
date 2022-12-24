@@ -12,7 +12,7 @@ public class Palmen : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-            Player.instance.pelmeshki += 1;
+            Player.instance.pelmeshki += 155;
 
             print(" + 1");
 

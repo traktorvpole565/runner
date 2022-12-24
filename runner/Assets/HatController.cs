@@ -10,7 +10,7 @@ public class HatController : MonoBehaviour {
 
 		if (Hatname != "none")
 
-			GameObject.Find(Hatname).SetActive(true);
+			GameObject.Find("Player/Hats/"+Hatname).SetActive(true);
 
 	}
 	

@@ -26,7 +26,7 @@ public class Hat : MonoBehaviour {
 
 			PlayerPrefs.SetInt("pelmeshki", VsePelmeshki);
 
-			
+			PlayerPrefs.SetInt("IsBuying" + hatName, 1);
 
 		}
 
@@ -34,10 +34,25 @@ public class Hat : MonoBehaviour {
 
     }
 
+	public void TakeOffHat()
+    {
+
+		isHat0n = false;
+
+		PlayerPrefs.SetString("hat", "none");
+
+	}
+
 	public void PutOnHat()
     {
 
-		if(IsBuying)
+		if (PlayerPrefs.GetString("hat", "none") != "none")
+		{
+			print("Вы уже в шляпе!");
+			return;
+		}
+
+		if (IsBuying)
         {
 
 			PlayerPrefs.SetString("hat",hatName);
@@ -54,10 +69,10 @@ public class Hat : MonoBehaviour {
 
 		VsePelmeshki = PlayerPrefs.GetInt("pelmeshki", 0);
 
-		IsBuying = PlayerPrefs.GetInt("IsBuying", 0) == 0 ? false : true;
+		IsBuying = PlayerPrefs.GetInt("IsBuying" + hatName, 0) == 0 ? false : true;
 
 		isHat0n = PlayerPrefs.GetString("hat","none" ) == hatName;
-
+		
 	}
 
 
