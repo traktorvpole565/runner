@@ -32,4 +32,11 @@ public class ShopUI : MonoBehaviour {
 
 	}
 
+	public void UpdateBalance()
+    {
+
+		VsePelmeshki = PlayerPrefs.GetInt("pelmeshki", 0);
+
+	}
+
 }
